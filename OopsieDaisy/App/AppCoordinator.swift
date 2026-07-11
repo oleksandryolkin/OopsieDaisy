@@ -25,8 +25,12 @@ final class AppCoordinator: ObservableObject {
     }
 
     func start() {
+        // Only request Input Monitoring eagerly. Accessibility is left to be
+        // requested lazily by the OS the first time CorrectionEngine actually
+        // calls CGEventPost/TISSelectInputSource — firing both prompts back
+        // to back at launch caused macOS to drop the Input Monitoring one
+        // entirely (only the Accessibility dialog showed up).
         PermissionsManager.requestInputMonitoringAccess()
-        PermissionsManager.requestAccessibilityAccess()
         let started = monitor.start()
         hasInputMonitoringAccess = started
         hasAccessibilityAccess = PermissionsManager.hasAccessibilityAccess()

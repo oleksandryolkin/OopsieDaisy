@@ -24,7 +24,7 @@ Everything happens locally on your Mac. No network requests, no telemetry, no da
 ## Requirements
 
 - macOS with two or more keyboard layouts enabled (System Settings → Keyboard → Input Sources).
-- Two system permissions — **Input Monitoring** and **Accessibility**. OopsieDaisy will prompt for both on first launch.
+- Two system permissions — **Input Monitoring** (prompted on launch) and **Accessibility** (prompted the first time it actually fixes a word). See [Installation](#installation) for the exact flow.
 
 ## Installation
 
