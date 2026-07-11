@@ -11,28 +11,6 @@ struct MenuBarView: View {
     @ObservedObject var launchAtLogin = LaunchAtLoginManager.shared
 
     var body: some View {
-        if !coordinator.hasInputMonitoringAccess {
-            Text("No keyboard access")
-            Button("Open Privacy Settings…") {
-                coordinator.openInputMonitoringSettings()
-            }
-            Button("Check Again") {
-                coordinator.refreshPermissionStatus()
-            }
-            Divider()
-        }
-
-        if !coordinator.hasAccessibilityAccess {
-            Text("No accessibility access")
-            Button("Open Privacy Settings…") {
-                coordinator.openAccessibilitySettings()
-            }
-            Button("Check Again") {
-                coordinator.refreshPermissionStatus()
-            }
-            Divider()
-        }
-
         Toggle("Enabled", isOn: $settings.isEnabled)
 
         Toggle("Launch at Login", isOn: Binding(
@@ -40,6 +18,16 @@ struct MenuBarView: View {
             set: { launchAtLogin.setEnabled($0) }
         ))
         .onAppear { launchAtLogin.refresh() }
+
+        Divider()
+
+        Button("Open Input Monitoring Settings…") {
+            coordinator.openInputMonitoringSettings()
+        }
+
+        Button("Open Accessibility Settings…") {
+            coordinator.openAccessibilitySettings()
+        }
 
         Divider()
 

@@ -27,17 +27,9 @@ enum PermissionsManager {
     /// Accessibility is what actually gates performing the correction:
     /// synthesizing the backspace/retype (`CGEventPost`) and switching the
     /// active keyboard layout (`TISSelectInputSource`) both require it, even
-    /// though observing keystrokes only needs Input Monitoring.
-    static func hasAccessibilityAccess() -> Bool {
-        AXIsProcessTrusted()
-    }
-
-    /// Prompts the system dialog on first call if not yet granted.
-    static func requestAccessibilityAccess() {
-        let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as NSString: true]
-        _ = AXIsProcessTrustedWithOptions(options)
-    }
-
+    /// though observing keystrokes only needs Input Monitoring. macOS
+    /// prompts for it on its own the first time those calls actually run,
+    /// so this is just a settings shortcut — no explicit status check/request.
     static func openAccessibilitySettings() {
         guard let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") else { return }
         NSWorkspace.shared.open(url)
