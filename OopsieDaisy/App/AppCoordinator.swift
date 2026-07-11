@@ -1,6 +1,6 @@
 //
 //  AppCoordinator.swift
-//  OopsType
+//  OopsieDaisy
 //
 //  Wires the keyboard monitor to the correction engine and owns app-level
 //  lifecycle concerns (permissions, app-switch buffer resets).

@@ -1,6 +1,6 @@
 //
 //  WordValidator.swift
-//  OopsType
+//  OopsieDaisy
 //
 //  Offline word validity check backed by the system spell checker, so we
 //  don't need to ship or maintain our own dictionaries.

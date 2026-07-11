@@ -1,13 +1,13 @@
 //
-//  OopsTypeUITestsLaunchTests.swift
-//  OopsTypeUITests
+//  OopsieDaisyUITestsLaunchTests.swift
+//  OopsieDaisyUITests
 //
 //  Created by Oleksandr Yolkin on 11/7/26.
 //
 
 import XCTest
 
-final class OopsTypeUITestsLaunchTests: XCTestCase {
+final class OopsieDaisyUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

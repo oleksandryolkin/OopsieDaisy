@@ -1,6 +1,6 @@
 //
 //  KeyboardMonitor.swift
-//  OopsType
+//  OopsieDaisy
 //
 //  Listens to keystrokes system-wide via a listen-only CGEventTap and
 //  accumulates the word currently being typed. It never blocks or modifies

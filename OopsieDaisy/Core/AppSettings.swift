@@ -1,6 +1,6 @@
 //
 //  AppSettings.swift
-//  OopsType
+//  OopsieDaisy
 //
 
 import Combine

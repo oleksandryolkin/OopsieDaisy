@@ -1,12 +1,12 @@
 //
-//  OopsTypeTests.swift
-//  OopsTypeTests
+//  OopsieDaisyTests.swift
+//  OopsieDaisyTests
 //
 
 import Testing
-@testable import OopsType
+@testable import OopsieDaisy
 
-struct OopsTypeTests {
+struct OopsieDaisyTests {
 
     /// "ghbdtn" is the textbook example of a word typed in the wrong layout:
     /// the user meant to type "привет" (hello) but forgot to switch to

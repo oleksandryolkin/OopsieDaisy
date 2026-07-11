@@ -1,6 +1,6 @@
 //
 //  CorrectionEngine.swift
-//  OopsType
+//  OopsieDaisy
 //
 //  Decides whether a just-finished word was typed in the wrong keyboard
 //  layout and, if so, performs the fix: switch the input source, delete the

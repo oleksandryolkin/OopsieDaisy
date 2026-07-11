@@ -1,6 +1,6 @@
 //
-//  OopsTypeApp.swift
-//  OopsType
+//  OopsieDaisyApp.swift
+//  OopsieDaisy
 //
 //  Created by Oleksandr Yolkin on 11/7/26.
 //
@@ -8,11 +8,11 @@
 import SwiftUI
 
 @main
-struct OopsTypeApp: App {
+struct OopsieDaisyApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
 
     var body: some Scene {
-        MenuBarExtra("OopsType", systemImage: "keyboard") {
+        MenuBarExtra("OopsieDaisy", systemImage: "keyboard") {
             MenuBarView()
         }
         .menuBarExtraStyle(.menu)

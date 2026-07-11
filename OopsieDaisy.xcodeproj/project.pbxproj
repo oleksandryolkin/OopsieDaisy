@@ -12,37 +12,37 @@
 			containerPortal = 5CDF4C48300238CB00CC23C1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5CDF4C4F300238CB00CC23C1;
-			remoteInfo = OopsType;
+			remoteInfo = OopsieDaisy;
 		};
 		5CDF4C68300238CD00CC23C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5CDF4C48300238CB00CC23C1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5CDF4C4F300238CB00CC23C1;
-			remoteInfo = OopsType;
+			remoteInfo = OopsieDaisy;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5CDF4C50300238CB00CC23C1 /* OopsType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OopsType.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CDF4C5D300238CD00CC23C1 /* OopsTypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OopsTypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CDF4C67300238CD00CC23C1 /* OopsTypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OopsTypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDF4C50300238CB00CC23C1 /* OopsieDaisy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OopsieDaisy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDF4C5D300238CD00CC23C1 /* OopsieDaisyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OopsieDaisyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDF4C67300238CD00CC23C1 /* OopsieDaisyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OopsieDaisyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5CDF4C52300238CB00CC23C1 /* OopsType */ = {
+		5CDF4C52300238CB00CC23C1 /* OopsieDaisy */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OopsType;
+			path = OopsieDaisy;
 			sourceTree = "<group>";
 		};
-		5CDF4C60300238CD00CC23C1 /* OopsTypeTests */ = {
+		5CDF4C60300238CD00CC23C1 /* OopsieDaisyTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OopsTypeTests;
+			path = OopsieDaisyTests;
 			sourceTree = "<group>";
 		};
-		5CDF4C6A300238CD00CC23C1 /* OopsTypeUITests */ = {
+		5CDF4C6A300238CD00CC23C1 /* OopsieDaisyUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OopsTypeUITests;
+			path = OopsieDaisyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		5CDF4C47300238CB00CC23C1 = {
 			isa = PBXGroup;
 			children = (
-				5CDF4C52300238CB00CC23C1 /* OopsType */,
-				5CDF4C60300238CD00CC23C1 /* OopsTypeTests */,
-				5CDF4C6A300238CD00CC23C1 /* OopsTypeUITests */,
+				5CDF4C52300238CB00CC23C1 /* OopsieDaisy */,
+				5CDF4C60300238CD00CC23C1 /* OopsieDaisyTests */,
+				5CDF4C6A300238CD00CC23C1 /* OopsieDaisyUITests */,
 				5CDF4C51300238CB00CC23C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		5CDF4C51300238CB00CC23C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5CDF4C50300238CB00CC23C1 /* OopsType.app */,
-				5CDF4C5D300238CD00CC23C1 /* OopsTypeTests.xctest */,
-				5CDF4C67300238CD00CC23C1 /* OopsTypeUITests.xctest */,
+				5CDF4C50300238CB00CC23C1 /* OopsieDaisy.app */,
+				5CDF4C5D300238CD00CC23C1 /* OopsieDaisyTests.xctest */,
+				5CDF4C67300238CD00CC23C1 /* OopsieDaisyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5CDF4C4F300238CB00CC23C1 /* OopsType */ = {
+		5CDF4C4F300238CB00CC23C1 /* OopsieDaisy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CDF4C71300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsType" */;
+			buildConfigurationList = 5CDF4C71300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsieDaisy" */;
 			buildPhases = (
 				5CDF4C4C300238CB00CC23C1 /* Sources */,
 				5CDF4C4D300238CB00CC23C1 /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5CDF4C52300238CB00CC23C1 /* OopsType */,
+				5CDF4C52300238CB00CC23C1 /* OopsieDaisy */,
 			);
-			name = OopsType;
+			name = OopsieDaisy;
 			packageProductDependencies = (
 			);
-			productName = OopsType;
-			productReference = 5CDF4C50300238CB00CC23C1 /* OopsType.app */;
+			productName = OopsieDaisy;
+			productReference = 5CDF4C50300238CB00CC23C1 /* OopsieDaisy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5CDF4C5C300238CD00CC23C1 /* OopsTypeTests */ = {
+		5CDF4C5C300238CD00CC23C1 /* OopsieDaisyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CDF4C74300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsTypeTests" */;
+			buildConfigurationList = 5CDF4C74300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsieDaisyTests" */;
 			buildPhases = (
 				5CDF4C59300238CD00CC23C1 /* Sources */,
 				5CDF4C5A300238CD00CC23C1 /* Frameworks */,
@@ -131,18 +131,18 @@
 				5CDF4C5F300238CD00CC23C1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				5CDF4C60300238CD00CC23C1 /* OopsTypeTests */,
+				5CDF4C60300238CD00CC23C1 /* OopsieDaisyTests */,
 			);
-			name = OopsTypeTests;
+			name = OopsieDaisyTests;
 			packageProductDependencies = (
 			);
-			productName = OopsTypeTests;
-			productReference = 5CDF4C5D300238CD00CC23C1 /* OopsTypeTests.xctest */;
+			productName = OopsieDaisyTests;
+			productReference = 5CDF4C5D300238CD00CC23C1 /* OopsieDaisyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5CDF4C66300238CD00CC23C1 /* OopsTypeUITests */ = {
+		5CDF4C66300238CD00CC23C1 /* OopsieDaisyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CDF4C77300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsTypeUITests" */;
+			buildConfigurationList = 5CDF4C77300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsieDaisyUITests" */;
 			buildPhases = (
 				5CDF4C63300238CD00CC23C1 /* Sources */,
 				5CDF4C64300238CD00CC23C1 /* Frameworks */,
@@ -154,13 +154,13 @@
 				5CDF4C69300238CD00CC23C1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				5CDF4C6A300238CD00CC23C1 /* OopsTypeUITests */,
+				5CDF4C6A300238CD00CC23C1 /* OopsieDaisyUITests */,
 			);
-			name = OopsTypeUITests;
+			name = OopsieDaisyUITests;
 			packageProductDependencies = (
 			);
-			productName = OopsTypeUITests;
-			productReference = 5CDF4C67300238CD00CC23C1 /* OopsTypeUITests.xctest */;
+			productName = OopsieDaisyUITests;
+			productReference = 5CDF4C67300238CD00CC23C1 /* OopsieDaisyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5CDF4C4B300238CB00CC23C1 /* Build configuration list for PBXProject "OopsType" */;
+			buildConfigurationList = 5CDF4C4B300238CB00CC23C1 /* Build configuration list for PBXProject "OopsieDaisy" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CDF4C4F300238CB00CC23C1 /* OopsType */,
-				5CDF4C5C300238CD00CC23C1 /* OopsTypeTests */,
-				5CDF4C66300238CD00CC23C1 /* OopsTypeUITests */,
+				5CDF4C4F300238CB00CC23C1 /* OopsieDaisy */,
+				5CDF4C5C300238CD00CC23C1 /* OopsieDaisyTests */,
+				5CDF4C66300238CD00CC23C1 /* OopsieDaisyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		5CDF4C5F300238CD00CC23C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5CDF4C4F300238CB00CC23C1 /* OopsType */;
+			target = 5CDF4C4F300238CB00CC23C1 /* OopsieDaisy */;
 			targetProxy = 5CDF4C5E300238CD00CC23C1 /* PBXContainerItemProxy */;
 		};
 		5CDF4C69300238CD00CC23C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5CDF4C4F300238CB00CC23C1 /* OopsType */;
+			target = 5CDF4C4F300238CB00CC23C1 /* OopsieDaisy */;
 			targetProxy = 5CDF4C68300238CD00CC23C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -409,7 +409,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsType;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsieDaisy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -440,7 +440,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsType;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsieDaisy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -461,14 +461,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsTypeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsieDaisyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OopsType.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OopsType";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OopsieDaisy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OopsieDaisy";
 			};
 			name = Debug;
 		};
@@ -482,14 +482,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsTypeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsieDaisyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OopsType.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OopsType";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OopsieDaisy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OopsieDaisy";
 			};
 			name = Release;
 		};
@@ -501,14 +501,14 @@
 				DEVELOPMENT_TEAM = MNQ98H9YXE;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsTypeUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsieDaisyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = OopsType;
+				TEST_TARGET_NAME = OopsieDaisy;
 			};
 			name = Debug;
 		};
@@ -520,21 +520,21 @@
 				DEVELOPMENT_TEAM = MNQ98H9YXE;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsTypeUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandryolkin.OopsieDaisyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = OopsType;
+				TEST_TARGET_NAME = OopsieDaisy;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5CDF4C4B300238CB00CC23C1 /* Build configuration list for PBXProject "OopsType" */ = {
+		5CDF4C4B300238CB00CC23C1 /* Build configuration list for PBXProject "OopsieDaisy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CDF4C6F300238CD00CC23C1 /* Debug */,
@@ -543,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CDF4C71300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsType" */ = {
+		5CDF4C71300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsieDaisy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CDF4C72300238CD00CC23C1 /* Debug */,
@@ -552,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CDF4C74300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsTypeTests" */ = {
+		5CDF4C74300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsieDaisyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CDF4C75300238CD00CC23C1 /* Debug */,
@@ -561,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CDF4C77300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsTypeUITests" */ = {
+		5CDF4C77300238CD00CC23C1 /* Build configuration list for PBXNativeTarget "OopsieDaisyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CDF4C78300238CD00CC23C1 /* Debug */,

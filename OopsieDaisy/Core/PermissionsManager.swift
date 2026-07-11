@@ -1,6 +1,6 @@
 //
 //  PermissionsManager.swift
-//  OopsType
+//  OopsieDaisy
 //
 
 import AppKit

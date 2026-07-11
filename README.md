@@ -1,12 +1,12 @@
-# OopsType
+# OopsieDaisy
 
 **A minimal macOS menu bar utility that fixes words typed in the wrong keyboard layout — automatically, invisibly, and entirely offline.**
 
-Type `ghbdsn`, get `привіт`. No dialogs, no clipboard tricks, no internet connection. The moment you finish a word in the wrong layout, OopsType switches your input source, deletes it, and retypes it correctly — just like the classic Punto Switcher, reimplemented natively for macOS.
+Type `ghbdsn`, get `привіт`. No dialogs, no clipboard tricks, no internet connection. The moment you finish a word in the wrong layout, OopsieDaisy switches your input source, deletes it, and retypes it correctly — just like the classic Punto Switcher, reimplemented natively for macOS.
 
 ## How it works
 
-1. OopsType runs quietly in the menu bar — no Dock icon, no windows.
+1. OopsieDaisy runs quietly in the menu bar — no Dock icon, no windows.
 2. It watches your keystrokes system-wide and buffers the word you're currently typing.
 3. When you finish a word (`Space`, `Enter`, `Tab`, or punctuation), it checks whether that word looks like it was typed in the wrong layout.
 4. If it does: your input source switches, the wrong word is deleted, and the correct one is typed in its place — before you've even noticed.
@@ -24,23 +24,23 @@ Everything happens locally on your Mac. No network requests, no telemetry, no da
 ## Requirements
 
 - macOS with two or more keyboard layouts enabled (System Settings → Keyboard → Input Sources).
-- **Input Monitoring** permission — required to observe keystrokes system-wide. OopsType will prompt for this on first launch.
+- **Input Monitoring** permission — required to observe keystrokes system-wide. OopsieDaisy will prompt for this on first launch.
 
 ## Installation
 
-OopsType isn't on the App Store — and can't be, by design (see [why](#why-not-on-the-app-store)). Build it from source with Xcode:
+OopsieDaisy isn't on the App Store — and can't be, by design (see [why](#why-not-on-the-app-store)). Build it from source with Xcode:
 
 ```bash
-git clone https://github.com/oleksandryolkin/OopsType.git
-cd OopsType
-open OopsType.xcodeproj
+git clone https://github.com/oleksandryolkin/OopsieDaisy.git
+cd OopsieDaisy
+open OopsieDaisy.xcodeproj
 ```
 
 Press **Run** in Xcode. On first launch, grant Input Monitoring access when prompted (System Settings → Privacy & Security → Input Monitoring), then quit and relaunch the app for the permission to take effect.
 
 ## Permissions & privacy
 
-OopsType asks for exactly one system permission — **Input Monitoring** — and nothing else. There's no Accessibility permission, no network access, no analytics.
+OopsieDaisy asks for exactly one system permission — **Input Monitoring** — and nothing else. There's no Accessibility permission, no network access, no analytics.
 
 - It **never** reads or stores the content of what you type beyond the single word currently in progress, which is discarded the moment you move on to the next one.
 - It **never** processes input while a secure field (like a password box) has focus — checked via `IsSecureEventInputEnabled`, before a single keystroke is buffered.
@@ -69,7 +69,7 @@ Layout translation is implemented using macOS's own `UCKeyTranslate` API against
 
 ## Why not on the App Store?
 
-App Sandbox — required for App Store distribution — blocks the system-wide `CGEventTap` and cross-process `CGEventPost` calls this app depends on, regardless of user-granted permissions. Apple doesn't offer an entitlement to unlock this for sandboxed apps. This puts OopsType in the same category as tools like Karabiner-Elements and BetterTouchTool, which are distributed directly rather than through the App Store.
+App Sandbox — required for App Store distribution — blocks the system-wide `CGEventTap` and cross-process `CGEventPost` calls this app depends on, regardless of user-granted permissions. Apple doesn't offer an entitlement to unlock this for sandboxed apps. This puts OopsieDaisy in the same category as tools like Karabiner-Elements and BetterTouchTool, which are distributed directly rather than through the App Store.
 
 ## Status
 

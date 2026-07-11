@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  OopsType
+//  OopsieDaisy
 //
 
 import AppKit

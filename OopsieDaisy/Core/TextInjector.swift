@@ -1,6 +1,6 @@
 //
 //  TextInjector.swift
-//  OopsType
+//  OopsieDaisy
 //
 //  Synthesizes the backspace + retype sequence that performs a correction.
 //  Every event we post is tagged with a marker so KeyboardMonitor can

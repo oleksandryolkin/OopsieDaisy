@@ -1,6 +1,6 @@
 //
 //  LayoutConverter.swift
-//  OopsType
+//  OopsieDaisy
 //
 //  Reconstructs what a sequence of physical key presses would have produced
 //  under a *different* keyboard layout, using UCKeyTranslate directly against
