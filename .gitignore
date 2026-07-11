@@ -20,3 +20,7 @@ build/
 
 # Test coverage artifacts
 *.profraw
+
+# Local release tooling (not for GitHub — build output stays local too)
+/build_sign_and_notarize.sh
+/.build/
