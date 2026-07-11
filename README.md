@@ -47,6 +47,9 @@ If OopsieDaisy is missing either permission, the menu bar item shows which one a
 
 OopsieDaisy asks for two system permissions, and nothing else — no network access, no analytics:
 
+<img width="529" height="249" alt="Screenshot 2026-07-11 at 12 15 05" src="https://github.com/user-attachments/assets/5627883b-e5b1-471c-bd70-4e6fe79b40db" />
+<img width="529" height="249" alt="Screenshot 2026-07-11 at 12 15 30" src="https://github.com/user-attachments/assets/f486e736-208d-411c-a9fb-cde9be7ab1f7" />
+
 - **Input Monitoring** — lets it observe keystrokes system-wide, so it can tell what word you just typed.
 - **Accessibility** — needed to actually perform the fix: synthesizing the backspace/retype (`CGEventPost`) and switching the active keyboard layout (`TISSelectInputSource`) both require it, even though merely *observing* keystrokes only needs Input Monitoring.
 
