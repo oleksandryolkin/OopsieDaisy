@@ -14,6 +14,7 @@ final class AppCoordinator: ObservableObject {
     static let shared = AppCoordinator()
 
     @Published private(set) var hasInputMonitoringAccess = PermissionsManager.hasInputMonitoringAccess()
+    @Published private(set) var hasAccessibilityAccess = PermissionsManager.hasAccessibilityAccess()
 
     private let monitor = KeyboardMonitor()
     private let engine = CorrectionEngine()
@@ -25,8 +26,10 @@ final class AppCoordinator: ObservableObject {
 
     func start() {
         PermissionsManager.requestInputMonitoringAccess()
+        PermissionsManager.requestAccessibilityAccess()
         let started = monitor.start()
         hasInputMonitoringAccess = started
+        hasAccessibilityAccess = PermissionsManager.hasAccessibilityAccess()
 
         appSwitchObserver = NSWorkspace.shared.notificationCenter.addObserver(
             forName: NSWorkspace.didActivateApplicationNotification,
@@ -39,6 +42,7 @@ final class AppCoordinator: ObservableObject {
 
     func refreshPermissionStatus() {
         hasInputMonitoringAccess = PermissionsManager.hasInputMonitoringAccess()
+        hasAccessibilityAccess = PermissionsManager.hasAccessibilityAccess()
         if hasInputMonitoringAccess, !monitor.isRunning {
             monitor.start()
         }
@@ -46,6 +50,10 @@ final class AppCoordinator: ObservableObject {
 
     func openInputMonitoringSettings() {
         PermissionsManager.openInputMonitoringSettings()
+    }
+
+    func openAccessibilitySettings() {
+        PermissionsManager.openAccessibilitySettings()
     }
 }
 

@@ -24,7 +24,7 @@ Everything happens locally on your Mac. No network requests, no telemetry, no da
 ## Requirements
 
 - macOS with two or more keyboard layouts enabled (System Settings → Keyboard → Input Sources).
-- **Input Monitoring** permission — required to observe keystrokes system-wide. OopsieDaisy will prompt for this on first launch.
+- Two system permissions — **Input Monitoring** and **Accessibility**. OopsieDaisy will prompt for both on first launch.
 
 ## Installation
 
@@ -36,11 +36,19 @@ cd OopsieDaisy
 open OopsieDaisy.xcodeproj
 ```
 
-Press **Run** in Xcode. On first launch, grant Input Monitoring access when prompted (System Settings → Privacy & Security → Input Monitoring), then quit and relaunch the app for the permission to take effect.
+Press **Run** in Xcode. On first launch, macOS will ask for permissions in two stages:
+
+1. **Input Monitoring** — grant it (System Settings → Privacy & Security → Input Monitoring), then **quit and relaunch** OopsieDaisy for the grant to take effect. Without this, it can't observe keystrokes at all.
+2. **Accessibility** — this one is only requested the first time OopsieDaisy actually tries to *fix* a word, i.e. the first time you type something in the wrong layout after launching. Grant it (System Settings → Privacy & Security → Accessibility); no relaunch needed for this one.
+
+If OopsieDaisy is missing either permission, the menu bar item shows which one and offers a shortcut straight to the right Settings pane.
 
 ## Permissions & privacy
 
-OopsieDaisy asks for exactly one system permission — **Input Monitoring** — and nothing else. There's no Accessibility permission, no network access, no analytics.
+OopsieDaisy asks for two system permissions, and nothing else — no network access, no analytics:
+
+- **Input Monitoring** — lets it observe keystrokes system-wide, so it can tell what word you just typed.
+- **Accessibility** — needed to actually perform the fix: synthesizing the backspace/retype (`CGEventPost`) and switching the active keyboard layout (`TISSelectInputSource`) both require it, even though merely *observing* keystrokes only needs Input Monitoring.
 
 - It **never** reads or stores the content of what you type beyond the single word currently in progress, which is discarded the moment you move on to the next one.
 - It **never** processes input while a secure field (like a password box) has focus — checked via `IsSecureEventInputEnabled`, before a single keystroke is buffered.

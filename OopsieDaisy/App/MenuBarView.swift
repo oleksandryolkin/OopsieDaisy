@@ -22,6 +22,17 @@ struct MenuBarView: View {
             Divider()
         }
 
+        if !coordinator.hasAccessibilityAccess {
+            Text("No accessibility access")
+            Button("Open Privacy Settings…") {
+                coordinator.openAccessibilitySettings()
+            }
+            Button("Check Again") {
+                coordinator.refreshPermissionStatus()
+            }
+            Divider()
+        }
+
         Toggle("Enabled", isOn: $settings.isEnabled)
 
         Toggle("Launch at Login", isOn: Binding(
