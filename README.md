@@ -28,7 +28,11 @@ Everything happens locally on your Mac. No network requests, no telemetry, no da
 
 ## Installation
 
-OopsieDaisy isn't on the App Store — and can't be, by design (see [why](#why-not-on-the-app-store)). Build it from source with Xcode:
+OopsieDaisy isn't on the App Store — and can't be, by design (see [why](#why-not-on-the-app-store)).
+
+**Download:** grab the signed, notarized `.dmg` from the [latest release](https://github.com/oleksandryolkin/OopsieDaisy/releases/latest), open it, and drag OopsieDaisy into `/Applications`.
+
+**Or build from source with Xcode:**
 
 ```bash
 git clone https://github.com/oleksandryolkin/OopsieDaisy.git
@@ -36,7 +40,7 @@ cd OopsieDaisy
 open OopsieDaisy.xcodeproj
 ```
 
-Press **Run** in Xcode. On first launch, macOS will ask for permissions in two stages:
+Press **Run** in Xcode. Either way, on first launch macOS will ask for permissions in two stages:
 
 1. **Input Monitoring** — grant it (System Settings → Privacy & Security → Input Monitoring), then **quit and relaunch** OopsieDaisy for the grant to take effect. Without this, it can't observe keystrokes at all.
 2. **Accessibility** — this one is only requested the first time OopsieDaisy actually tries to *fix* a word, i.e. the first time you type something in the wrong layout after launching. Grant it (System Settings → Privacy & Security → Accessibility); no relaunch needed for this one.
