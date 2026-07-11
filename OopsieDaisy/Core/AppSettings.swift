@@ -14,13 +14,23 @@ final class AppSettings: ObservableObject {
         didSet { UserDefaults.standard.set(isEnabled, forKey: Keys.enabled) }
     }
 
-    /// Apps where autocorrection is intentionally skipped: terminals, code
-    /// editors and password managers regularly contain text that looks like
-    /// gibberish to a spell checker in either language.
-    let excludedBundleIdentifiers: Set<String> = [
+    /// Off by default: terminals are common enough to want autocorrection in
+    /// that some users will prefer it on, so exclusion is opt-in rather than
+    /// baked in like the editors/password managers below.
+    @Published var excludeTerminalApps: Bool {
+        didSet { UserDefaults.standard.set(excludeTerminalApps, forKey: Keys.excludeTerminalApps) }
+    }
+
+    let terminalBundleIdentifiers: Set<String> = [
         "com.apple.Terminal",
         "com.googlecode.iterm2",
         "dev.warp.Warp-Stable",
+    ]
+
+    /// Apps where autocorrection is always skipped: code editors and
+    /// password managers regularly contain text that looks like gibberish to
+    /// a spell checker in either language.
+    let alwaysExcludedBundleIdentifiers: Set<String> = [
         "com.microsoft.VSCode",
         "com.jetbrains.intellij",
         "com.apple.dt.Xcode",
@@ -29,8 +39,13 @@ final class AppSettings: ObservableObject {
         "com.apple.SecurityAgent",
     ]
 
+    var excludedBundleIdentifiers: Set<String> {
+        excludeTerminalApps ? alwaysExcludedBundleIdentifiers.union(terminalBundleIdentifiers) : alwaysExcludedBundleIdentifiers
+    }
+
     private enum Keys {
         static let enabled = "isEnabled"
+        static let excludeTerminalApps = "excludeTerminalApps"
     }
 
     private init() {
@@ -39,5 +54,6 @@ final class AppSettings: ObservableObject {
         } else {
             isEnabled = true
         }
+        excludeTerminalApps = UserDefaults.standard.bool(forKey: Keys.excludeTerminalApps)
     }
 }

@@ -13,6 +13,8 @@ struct MenuBarView: View {
     var body: some View {
         Toggle("Enabled", isOn: $settings.isEnabled)
 
+        Toggle("Exclude Terminal Apps", isOn: $settings.excludeTerminalApps)
+
         Toggle("Launch at Login", isOn: Binding(
             get: { launchAtLogin.isEnabled },
             set: { launchAtLogin.setEnabled($0) }
